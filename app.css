@@ -1,0 +1,109 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+/* CONTAINER STYLES */
+
+body {
+  background-color: tan;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 50px;
+ 
+}
+
+div.section {
+  border: 1px solid black;
+  min-width: 300px;
+  max-width: 800px;
+  border-radius: 5px;
+  box-shadow: 1px 3px 4px gray;
+}
+
+div.question legend { 
+  margin: 15px 0px;
+}
+
+div.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+div.right-answer {
+  padding: 3px;
+  margin: 3px 0px;
+  border: 1px green solid;
+  color: green;
+}
+
+div.wrong-answer {
+  padding: 3px;
+  margin: 3px 0px;
+  border: 1px red solid;
+  color: red;
+}
+
+form {
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+
+form.question-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+form fieldset, fieldset {
+  border: 0 none;
+}
+
+ul.question-and-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  list-style: none;
+  padding: 0px;
+  font-family: futura, sans-serif;
+  font-weight: lighter;
+}
+
+/* TEXT STYLES */
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: Futura, sans-serif;
+  text-shadow: 1px 3px 4px gray;
+}
+
+
+legend.final-result {
+  font-size: 20px;
+  font-family: futura, sans-serif;
+  font-weight: lighter;
+
+}
+
+/* BUTTON AND INPUTS STYLES */
+
+#next-question-btn {
+  display: none;
+}
+
+input:disabled {
+  opacity: 0.5;
+}
